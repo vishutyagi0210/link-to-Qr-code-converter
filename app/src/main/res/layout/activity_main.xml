@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        style="@style/myEditTextStyle"
+        android:id="@+id/EditTextForLink"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id = "@+id/cardViewForQrImageHolder"
+        app:cardCornerRadius="14dp"
+        >
+
+        <ImageView
+            android:id = "@+id/ImageViewForQr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/ButtonForQrGenerateAndDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewForQrImageHolder"
+        android:layout_marginTop="20dp"
+        android:text="generate"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"/>
+
+
+
+</RelativeLayout>
